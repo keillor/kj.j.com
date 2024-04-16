@@ -1,0 +1,80 @@
+.kj {
+  padding: 1ch;
+  stroke-width: 1.5rem;
+  fill: none;
+  /*stroke-dasharray: 870;
+  stroke-dashoffset: 870;*/
+  align-self: flex-start;
+  border-radius: 1rem;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  overflow: visible;
+}
+
+.k {
+  stroke: var(--yellow);
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: hand 0.75s ease-in-out forwards;
+}
+
+.k2 {
+  stroke: var(--blue);
+  stroke-dasharray: 870;
+  stroke-dashoffset: 870;
+  animation: hand 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.j {
+  stroke: var(--orange);
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: hand 0.75s ease-in-out forwards;
+  animation-delay: 1.25s;
+}
+
+.j2 {
+  stroke: var(--red);
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: hand 0.5s ease-in forwards;
+  animation-delay: 1.75s;
+}
+
+@keyframes hand {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.navbar {
+  background-color: var(--primary-background);
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navlist {
+  font-size: 3rem;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  padding: 1rem;
+}
+
+.buttons:nth-child(1n + 1) {
+  color: var(--red);
+}
+
+.buttons:nth-child(2n + 1) {
+  color: var(--orange);
+}
+
+.buttons:nth-child(3n + 1) {
+  color: var(--blue);
+}
