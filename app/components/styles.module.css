@@ -1,3 +1,4 @@
+/*animated styles*/
 .kj {
   padding: 1ch;
   stroke-width: 1.5rem;
@@ -48,12 +49,33 @@
   }
 }
 
+/*non-animated styles*/
+
+.kNA {
+  stroke: var(--yellow);
+}
+
+.k2NA {
+  stroke: var(--blue);
+}
+
+.jNA {
+  stroke: var(--orange);
+}
+
+.j2NA {
+  stroke: var(--red);
+}
+
+
+
 .navbar {
   background-color: var(--primary-background);
   min-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
 }
 
 .navlist {
@@ -63,8 +85,25 @@
   align-items: center;
 }
 
+.navBarBottomGradient {
+  background-image:linear-gradient(to left, var(--blue), var(--yellow), var(--orange), var(--red));
+  min-width: 100%;
+  min-height: 0.25rem;
+}
+
 .buttons {
-  padding: 1rem;
+  padding: 0.25rem;
+  margin: 1rem;
+  border: solid 1px black;
+  -webkit-box-shadow: 10px 10px 0px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 0px 3px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 0px 3px rgba(0,0,0,0.75);
+  transition: all 0.25s;
+}
+
+.buttons:hover {
+  box-shadow: 0px 0px 0px 5px;
+  transform: translateY(5%);
 }
 
 .buttons:nth-child(1n + 1) {

@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <p className='flex justify-center'>Hi! My name is</p>
+      <p className='flex justify-center text-white '>Hi! My name is</p>
       <div className='flex justify-center'>
-        <KJLogo height={500}/>
+        <KJLogo height={500} animated={true}/>
       </div>
       
     </>

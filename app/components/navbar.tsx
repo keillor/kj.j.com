@@ -4,9 +4,10 @@ import Image from "next/image";
 import KJLogo from "./kj_logo";
 export default function Navbar() {
   return (
+    <>
     <div className={styles.navbar}>
       <div>
-        <KJLogo height={100}/>
+        <KJLogo height={100} animated={false}/>
       </div>
       <ul className={styles.navlist}>
         <Link className={styles.buttons} href={"#"}>
@@ -20,5 +21,7 @@ export default function Navbar() {
         </Link>
       </ul>
     </div>
+    <div className={styles.navBarBottomGradient}/>
+    </>
   );
 }
