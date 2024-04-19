@@ -5,7 +5,6 @@
   fill: none;
   /*stroke-dasharray: 870;
   stroke-dashoffset: 870;*/
-  align-self: flex-start;
   border-radius: 1rem;
   stroke-linecap: round;
   stroke-miterlimit: 10;
@@ -75,7 +74,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
+  align-items: center;
 }
 
 .navlist {
@@ -94,26 +93,31 @@
 .buttons {
   padding: 0.25rem;
   margin: 1rem;
-  border: solid 1px black;
-  -webkit-box-shadow: 10px 10px 0px 3px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 0px 3px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 0px 3px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  -moz-box-shadow: 11px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
   transition: all 0.25s;
+  border-radius: 5px;
 }
 
 .buttons:hover {
-  box-shadow: 0px 0px 0px 5px;
-  transform: translateY(5%);
+  box-shadow: 0px 0px 0px 0px;
+  transform: translateY(5px) translateX(5px);
 }
 
 .buttons:nth-child(1n + 1) {
   color: var(--red);
+  border: solid 1px var(--red)
 }
 
 .buttons:nth-child(2n + 1) {
   color: var(--orange);
+  border: solid 1px var(--orange)
 }
 
 .buttons:nth-child(3n + 1) {
   color: var(--blue);
+  border: solid 1px var(--blue)
 }
+
+
