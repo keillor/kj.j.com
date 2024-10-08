@@ -3,5 +3,6 @@
 To get started:
 - clone the repo
 - open the folder
-- `npm i`
-- `npm run dev`
+- run `npm i`
+- run `npm run dev`
+- site should be running on `localhost:3000`
